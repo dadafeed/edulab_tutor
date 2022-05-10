@@ -1,0 +1,93 @@
+// 기본 속성
+html {
+  font-size: 62.5%;
+  -webkit-text-size-adjust: none;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #2db39c;
+    border-radius: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #f2f2f2;
+  }
+}
+
+body {
+  font-size: 1rem;
+  background: #fff;
+  line-height: 1.5;
+  word-wrap: break-word;
+  word-break: keep-all;
+  overflow-x: hidden;
+  overflow-y: auto;
+  min-width: 320px;
+}
+
+// 모바일웹에서 푸터 하단 고정
+@media all and (min-width: 0px) and (max-width: 959.98px) {
+
+  #wrap {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+  }
+
+  .content {
+    padding-bottom: 52.1rem;
+    min-height: 100%;
+  }
+
+  footer {
+    width: 100%;
+    height: 52.1rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+// 전체 요소에 기본 폰트 및 box-sizing 적용
+* {
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+  box-sizing: border-box;
+}
+
+// 웹접근성을 위한 blind 속성
+.blind {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+}
+
+// 브라우저별 input clear 버튼 속성
+/* IE */
+input::-ms-clear,
+input::-ms-reveal {
+  cursor: pointer;
+
+  @include media(medium) {
+    display: none;
+  }
+}
+
+/* Chrome */
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+  cursor: pointer;
+
+  @include media(medium) {
+    display: none;
+  }
+}

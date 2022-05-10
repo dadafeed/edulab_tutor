@@ -1,0 +1,2979 @@
+// main contents - pc (1200px ~ )
+main {
+  background: #fff;
+
+  // 상단 강의 소개 영역
+  section.tutor-intro-section {
+
+    .only-pc {
+      display: block;
+
+      .tutor-intro {
+        width: 100%;
+        height: 61rem;
+        background: floralwhite;
+        overflow: hidden;
+
+        .tutor-intro_align-center {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          max-width: 138rem;
+          @include fluid-grid;
+
+          .tutor-intro_text-area {
+            padding: 0 0 5rem 10rem;
+            flex: 0 1 63.6rem;
+
+            .top-text {
+
+              p {
+                font-size: 1.5rem;
+                font-weight: 500;
+                color: #222;
+                margin: 0 0 1rem 0;
+              }
+
+              em {
+                display: block;
+                font-size: 4rem;
+                font-weight: 700;
+                color: #222;
+                padding: 0 0 1rem 0;
+              }
+
+              .middle-text {
+                padding: 1rem 0 1.5rem 0;
+              }
+            }
+
+            .tutor-intro_icon-area {
+
+              img {
+                width: 4.8rem;
+                height: 4.8rem;
+                padding: 0 1.5rem 0 0;
+              }
+            }
+
+            .below-text {
+              padding: 2.5rem 0 0 0;
+
+              p {
+                font-size: 1.5rem;
+                font-weight: 500;
+                color: #444;
+                padding: 0 0 1.5rem 0;
+              }
+            }
+          }
+
+          .tutor-intro_img-area {
+
+            .tutor-img {
+              width: 50rem;
+              overflow: hidden;
+
+              .tutor-pic {
+                margin: 0 0 0 6rem;
+                transform: scale(0.85);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .only-mobile {
+      display: none;
+    }
+  }
+
+  // 모바일 하단 구매 옵션
+  section.mobile-purchase-order {
+
+    .only-mobile {
+      display: none;
+    }
+  }
+
+  // PC 중간 네비게이션
+  section.class-intro-navbar-section {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    .only-pc {
+      display: block;
+
+      .class-intro_navbar {
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 5rem;
+        color: #444;
+        margin: 0 auto;
+        border-bottom: 1px solid #eee;
+        background: #fff;
+        max-width: 138rem;
+        @include fluid-grid;
+
+        ul {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+
+          li {
+            padding: 0 2.5rem;
+
+            &:first-child {
+              padding: 0 2.5rem 0 1.5rem;
+            }
+          }
+        }
+      }
+    }
+
+    .only-mobile {
+      display: none;
+    }
+  }
+
+  // PC 컨텐츠 영역
+  section.pc-contents-section {
+
+    .only-pc {
+      display: block;
+
+      .class-intro {
+        width: 100%;
+        background: #fff;
+
+        .class-intro_align-center {
+          max-width: 138rem;
+          height: auto;
+          display: flex;
+          justify-content: space-evenly;
+          @include fluid-grid;
+
+          // 왼쪽 강의 영역
+          .left-area {
+            box-sizing: border-box;
+            min-width: 55rem;
+            max-width: 75rem;
+            padding: 0 1%;
+
+            // 강의소개
+            .introduce-tutor {
+              width: 100%;
+              margin: 5rem 0 0 0;
+              padding: 2rem;
+              border: 1px solid #E9ECEF;
+              border-radius: .8rem;
+              background: #fafafa;
+
+              .introduce-tutor_upper-area {
+                display: flex;
+                padding: 2rem 0;
+
+
+                .introduce-tutor_txt-area {
+                  width: 100%;
+                  flex: 1 1 60%;
+
+                  .text-01 {
+                    width: 100%;
+                    max-width: 100rem;
+
+                    em {
+                      display: block;
+                      font-size: 1.6rem;
+                      font-weight: 700;
+                      color: #222;
+                      line-height: 2.4rem;
+                    }
+
+                    p {
+                      font-size: 1.5rem;
+                      font-weight: 400;
+                      color: #222;
+                      line-height: 2.4rem;
+                      margin: 3rem 0 1rem 0;
+                    }
+                  }
+                }
+
+                .introduce-tutor_img-area {
+                  width: 100%;
+                  flex: 1 1 10%;
+
+                  .profile-img-box {
+                    max-width: 13rem;
+                    border-radius: 50%;
+                    margin-left: auto;
+
+                    .profile-img {
+                      width: 100%;
+                      height: 100%;
+                      object-fit: cover;
+                    }
+                  }
+                }
+              }
+
+              .introduce-tutor_below-area {
+
+                .text-02 {
+
+                  blockquote {
+
+                    em {
+                      font-size: 2.4rem;
+                      font-weight: 700;
+                      color: #222;
+                      line-height: 3.8rem;
+                      margin: 3rem 0 1rem 0;
+                      font-style: oblique;
+                    }
+                  }
+
+                  p {
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                    color: #222;
+                    line-height: 2.4rem;
+                    margin: 3rem 0 1rem 0;
+                  }
+                }
+              }
+            }
+
+            // 커리큘럼
+            .wrap-curriculum {
+
+              .curriculum {
+                width: 100%;
+                display: inline-block;
+                margin: 5rem auto 0;
+                padding: 2rem 0 5rem 0;
+                border: 1px solid #E9ECEF;
+                border-radius: .8rem;
+                background: #fafafa;
+
+                p {
+                  font-size: 1.6rem;
+                  font-weight: 700;
+                  color: #222;
+                  margin: 0 0 4rem 2rem;
+                }
+
+                .multi-accordion {
+                  width: 100%;
+                  padding: 0 2rem;
+                  margin: 0 auto;
+                  border-radius: 1rem;
+                  overflow: hidden;
+
+                  details {
+                    display: block;
+                    font-size: 1.6rem;
+                    letter-spacing: -0.5px;
+
+                    &[open] {
+                      background: #fff;
+
+                      summary {
+                        background: #3bc4a3;
+
+                        &::marker {
+                          content: "➖ ";
+                        }
+
+                        &:last-child {
+                          border-radius: 0 0 0 0;
+                        }
+                      }
+                    }
+
+                    &:first-child {
+                      summary {
+                        border-radius: 1rem 1rem 0 0;
+                      }
+                    }
+
+                    &:last-child {
+                      summary {
+                        border-radius: 0 0 1rem 1rem;
+                      }
+                    }
+
+                    &[open] {
+
+                      summary {
+                        border-radius: 0;
+                      }
+
+                      summary:nth-child(1) {
+                        border-top-left-radius: 8px;
+                        border-top-right-radius: 8px;
+                      }
+                    }
+
+                    &:nth-child(1),
+                    &:nth-child(2) {
+                      summary {
+                        border-bottom: 1px solid #26806b;
+                      }
+                    }
+
+                    summary {
+                      font-weight: bold;
+                      padding: 1.5rem;
+                      cursor: pointer;
+                      border-bottom: 1px solid #3bc4a3;
+                      background: #3bc4a3;
+
+                      &::marker {
+                        content: "➕ ";
+                        font-family: monospace;
+                      }
+                    }
+
+                    .text-and-preview {
+                      display: flex;
+                      justify-content: space-between;
+                      border-bottom: 1px solid #eee;
+
+                      &:last-child {
+                        border: 0;
+                        border-radius: 0 0 1rem 1rem;
+                      }
+
+                      .text {
+                        line-height: 3rem;
+                        padding: 1rem 0 1rem 4rem;
+                        background: #fff;
+                        font-size: 1.4rem;
+                        word-break: break-all;
+
+                        &::before {
+                          content: "";
+                          display: inline-block;
+                          background: url("../src/images/play-gray.svg") no-repeat;
+                          width: 1.6rem;
+                          height: 1.6rem;
+                          vertical-align: -0.3rem;
+                          margin: 0 .7rem 0 0;
+                        }
+                      }
+
+                      .preview {
+                        width: 7.5rem;
+                        height: 3rem;
+                        border: 1.5px solid #42b7a3;
+                        border-radius: .5rem;
+                        font-size: 1.2rem;
+                        font-weight: 500;
+                        color: #42b7a3;
+                        margin: 1rem 2.5rem;
+                      }
+
+                      .runtime {
+                        width: 7.5rem;
+                        font-size: 1.4rem;
+                        font-weight: 400;
+                        letter-spacing: .5px;
+                        color: #666;
+                        margin: 1rem 2.5rem;
+                        text-align: center;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+
+            // 수강후기
+            .wrap-lecture-review {
+
+              .lecture-review {
+                display: inline-block;
+                width: 100%;
+                margin: 5rem auto 0;
+                border: 1px solid #e9e9e9;
+                border-radius: .8rem;
+                background: #fafafa;
+                padding: 2rem 2rem 0;
+
+                .lecture-review__title {
+                  font-size: 1.6rem;
+                  font-weight: 700;
+                  color: #222;
+                  margin: 0 0 4rem 0;
+                }
+
+                .wrap-star-review {
+                  display: flex;
+                  justify-content: space-evenly;
+                  align-items: center;
+
+                  .left-star-review {
+                    flex: 0 0 30%;
+                    width: 100%;
+                    height: 19rem;
+                    border: 1px solid #e9e9e9;
+                    border-radius: .5rem;
+                    text-align: center;
+                    box-sizing: border-box;
+                    background: #fff;
+                    margin: 0 1rem 0 0;
+                    padding: 2.5rem;
+
+                    .review-num-01 {
+                      font-size: 3.6rem;
+                      font-weight: 700;
+                    }
+
+                    .star-images {
+                      display: flex;
+                      justify-content: center;
+                      margin: 1.5rem 0 1.5rem 0;
+
+                      .star {
+                        width: 1.7rem;
+                        height: 1.7rem;
+                        padding: 0 .3rem 0 0;
+                      }
+                    }
+
+                    .review-num-02 {
+                      font-size: 1.4rem;
+                      font-weight: 300;
+                      color: #666;
+                    }
+                  }
+
+                  .right-star-review {
+                    flex: 0 0 70%;
+                    width: 100%;
+                    height: 19rem;
+                    border: 1px solid #e9e9e9;
+                    border-radius: .5rem;
+                    box-sizing: border-box;
+                    background: #fff;
+
+                    .star-score-container {
+                      padding: 0 2rem;
+
+                      .score-box {
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: center;
+                        margin: 1.5rem 0;
+
+                        .star-score__text {
+                          flex: 0 0 5%;
+                          font-size: 1.3rem;
+                          font-weight: 500;
+                          color: #222;
+                        }
+
+                        .score-container {
+                          flex: 0 0 85%;
+                          width: 100%;
+                          color: transparent;
+                          line-height: 1rem;
+                          height: 1rem;
+                          background-color: rgba(0, 0, 0, 0.1);
+                          border-radius: 1rem;
+
+                          .skills {
+                            width: 0%;
+                            height: 1rem;
+                            border-radius: 1rem;
+                            transition: all 1s ease;
+
+                            &.score-05 {
+                              background-color: #ffc600;
+                              width: 97%;
+                            }
+
+                            &.score-04 {
+                              background-color: #ffc600;
+                              width: 3%;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+
+                .wrap-review-comment-navbar {
+                  display: inline-block;
+                  width: 100%;
+
+                  .review-comment-navbar {
+                    width: 100%;
+                    border-bottom: 1px solid #e9e9e9;
+                    margin: 0 1.5rem 1rem;
+
+                    ul {
+                      display: flex;
+                      justify-content: flex-start;
+                      align-items: center;
+
+                      li {
+                        margin: 3rem 2.7rem 1.5rem .5rem;
+                        font-size: 1.4rem;
+                        color: #222;
+                        padding: 0 0 .5rem 0;
+
+                        &::after {
+                          display: inline-block;
+                          content: "";
+                          width: 0.5px;
+                          height: 1.1rem;
+                          background: #666;
+                          margin: 0 0 0 1.5rem;
+                          vertical-align: middle;
+                        }
+                      }
+
+                      a {
+
+                        li {
+                          margin: 3rem 2.7rem 1.5rem 0;
+                          font-size: 1.4rem;
+                          font-weight: 300;
+                          color: #444;
+                          padding: 0 0 .5rem 0;
+
+                          &:hover {
+                            font-weight: 500;
+                            color: #222;
+                          }
+
+                          &::after {
+                            display: none;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+
+                .review-comment-container {
+                  width: 100%;
+                  border-radius: .5rem;
+                  margin: 1.5rem auto 0;
+
+                  .review-comment-box {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+                    grid-template-rows: repeat(3, 20rem);
+                    grid-gap: 1rem;
+
+                    .item {
+                      border: 1px solid #e9e9e9;
+                      border-radius: .5rem;
+                      color: #222;
+                      font-size: 1.5rem;
+                      font-weight: 400;
+                      line-height: 2.4rem;
+                      padding: 2rem;
+                      background: #fff;
+
+                      .user-profile-box {
+                        width: 15rem;
+                        height: 3rem;
+
+                        .user-profile-box-flex {
+                          display: flex;
+                          align-items: center;
+
+                          .star-user-profile-image {
+                            width: 3rem;
+                            height: 3rem;
+                            border-radius: 70%;
+                          }
+
+                          .star-user-name-box {
+                            width: 12rem;
+                            height: 3rem;
+
+                            .star-user-name {
+                              font-size: 1.4rem;
+                              font-weight: 500;
+                              line-height: 1rem;
+                              color: #333;
+                              margin: 0 0 0 1rem;
+                            }
+
+                            .star-images {
+                              width: 1rem;
+                              height: 1rem;
+                              display: flex;
+                              margin: .8rem 0 0 1rem;
+
+                              .star-count {
+                                font-size: 1.2rem;
+                                font-weight: 400;
+                                line-height: 1rem;
+                                color: #222;
+                                margin: 0 0 0 .5rem;
+                              }
+                            }
+                          }
+                        }
+                      }
+
+                      .ellipsis-box {
+                        height: 10rem;
+                        white-space: normal;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 4;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                        margin: 1rem 0 0 0;
+
+                        p {
+                          margin: 0 .8rem 0 0;
+                          font-size: 1.5rem;
+                          font-weight: 400;
+                        }
+                      }
+
+                      .ellipsis-date {
+                        font-size: 1.2rem;
+                        font-weight: 400;
+                        line-height: 1.8rem;
+                        color: #444;
+                        margin: 0 auto;
+                        text-align: right;
+                      }
+                    }
+                  }
+                }
+
+                .comment-page-numbering {
+                  margin: 4rem 0 2rem 1rem;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+
+                  button {
+
+                    .left-arrow {
+                      display: inline-block;
+                      transform: rotate(270deg) scale(0.7);
+                      width: 2rem;
+                      height: 2rem;
+                      margin: 1px 0 0 0;
+                    }
+                  }
+
+                  ul {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    counter-reset: list-number;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    button {
+
+                      li {
+                        counter-increment: list-number;
+                        line-height: 2;
+
+                        &::before {
+                          content: counter(list-number);
+                          display: inline-block;
+                          text-align: center;
+                          line-height: 1.2;
+                          width: 3rem;
+                          height: 3rem;
+                          border-radius: 50%;
+                          color: #bdbebd;
+                          margin: 0 0 0 .5rem;
+                          font-size: 1.3rem;
+                          line-height: 3rem;
+                        }
+
+                        &.first-child {
+
+                          &::before {
+                            width: 3rem;
+                            height: 3rem;
+                            background: #e9e9e9;
+                            color: #222;
+                          }
+                        }
+                      }
+                    }
+                  }
+
+                  button {
+
+                    .right-arrow {
+                      display: inline-block;
+                      transform: rotate(90deg) scale(0.7);
+                      width: 2rem;
+                      height: 2rem;
+                      margin: 1px 0 0 .8rem;
+                    }
+                  }
+                }
+              }
+            }
+
+            // 커뮤니티
+            .wrap-community {
+
+              .community {
+                display: inline-block;
+                width: 100%;
+                margin: 5rem 0 0 0;
+                padding: 2rem;
+                border: 1px solid #e9e9e9;
+                border-radius: .8rem;
+                background: #fafafa;
+
+                p {
+
+                  &:nth-child(1) {
+                    font-size: 1.6rem;
+                    font-weight: 700;
+                    color: #222;
+                  }
+                }
+
+                .swiper {
+
+                  .swiper-wrapper {
+
+                    .swiper-slide {
+                      height: 25rem;
+                      background: #fff;
+                      margin: 2rem 0 0 0;
+                      padding: 2rem;
+                      border: 1px solid #eee;
+                      border-radius: .8rem;
+
+                      .community-user-profile-box {
+                        display: flex;
+                        align-items: center;
+
+                        .community-user-profile-img {
+                          width: 3.8rem;
+                          height: 3.8rem;
+                          border-radius: 50%;
+                        }
+
+                        .community-user-name-box {
+                          width: 9rem;
+                          height: 3rem;
+                          margin: 0 0 0 .8rem;
+
+                          .community-user-name {
+                            font-size: 1.4rem;
+                            font-weight: 500;
+                            line-height: 1.2rem;
+                            color: #444;
+                            text-align: left;
+                            margin: 0;
+                          }
+
+                          .community-date {
+                            font-size: 1rem;
+                            font-weight: 400;
+                            color: #666;
+                            margin: .8rem 0 0 0;
+                            text-align: left;
+                          }
+                        }
+                      }
+
+                      .swiper-caption {
+                        padding: 2rem 2rem 0 0;
+                        font-size: 1.4rem;
+                        font-weight: 400;
+                        line-height: 2.4rem;
+                        color: #000;
+                        text-align: left;
+                        width: 100%;
+                        display: -webkit-box;
+                        overflow: hidden;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 4;
+                        text-overflow: ellipsis;
+                        word-wrap: normal;
+                        max-height: 20rem;
+                      }
+
+                      .swiper-more {
+                        display: block;
+                        font-size: 1.3rem;
+                        font-weight: 400;
+                        color: #e5503c;
+                        margin: 2rem 0 0 0;
+                      }
+                    }
+                  }
+                }
+
+                .cont-community-comment {
+                  width: 100%;
+                  display: inline-block;
+                  border: 1px solid #e9e9e9;
+                  border-radius: 1rem;
+                  margin: 1rem 0 0 0;
+                  box-sizing: border-box;
+                  background: #fff;
+                  padding: 2rem;
+
+                  .community-user-profile-box {
+                    display: flex;
+                    align-items: center;
+
+                    .community-user-profile-box-flex {
+                      display: flex;
+                      align-items: center;
+
+                      .community-star-user-profile-image {
+                        width: 4rem;
+                        border-radius: 50%;
+                      }
+
+                      .community-star-user-name-box {
+                        margin: 0 0 0 1rem;
+
+                        .community-star-user-name {
+                          font-size: 1.4rem;
+                          font-weight: 500;
+                          line-height: 1rem;
+                          color: #444;
+                        }
+
+                        .community-date {
+                          font-size: 1.1rem;
+                          font-weight: 400;
+                          color: #666;
+                          padding: .8rem 0 0 0;
+                        }
+                      }
+                    }
+                  }
+
+                  .user-review-record {
+                    padding: 0 2rem 1.5rem 5rem;
+
+                    p {
+                      font-size: 1.5rem;
+                      line-height: 2.4rem;
+                      color: #666;
+                      margin: 0 0 0 0;
+                      font-weight: 400;
+                    }
+                  }
+
+                  .tutor-reply-container {
+                    position: relative;
+
+                    &::before {
+                      content: '';
+                      display: inline-block;
+                      position: absolute;
+                      top: .5rem;
+                      left: 3rem;
+                      width: 2rem;
+                      height: 2rem;
+                      background: url("../src/images/reply-icon-gray.svg") no-repeat center/cover;
+                      transform: rotate(180deg);
+                    }
+
+                    .community-tutor-profile-box {
+                      height: 5rem;
+                      margin: 0 0 0 6rem;
+                      display: flex;
+                      align-items: center;
+
+                      .community-tutor-profile-box-flex {
+                        display: flex;
+                        align-items: center;
+
+                        .community-star-tutor-profile-image {
+                          width: 4rem;
+                          border-radius: 50%;
+                        }
+
+                        .community-star-tutor-name-box {
+                          margin: 0 0 0 1rem;
+
+                          .community-star-tutor-name {
+                            font-size: 1.4rem;
+                            font-weight: 500;
+                            line-height: 1rem;
+                            color: #444;
+                          }
+
+                          .community-tutor-date {
+                            font-size: 1.1rem;
+                            font-weight: 400;
+                            color: #666;
+                            padding: .8rem 0 0 0;
+                          }
+                        }
+                      }
+                    }
+
+                    .tutor-reply-record {
+                      padding: 0 2rem 1.5rem 11rem;
+
+                      .tutor-reply {
+                        display: inline-block;
+                        font-size: 1.5rem;
+                        font-weight: 400;
+                        line-height: 2.4rem;
+                        color: #666;
+                      }
+                    }
+                  }
+
+                  .writing-reply {
+
+                    .reply-area {
+                      border: 1px solid #cccccc;
+                      border-radius: 4rem;
+                      box-sizing: border-box;
+                      text-align: center;
+
+                      form {
+                        display: flex;
+                        align-items: center;
+
+                        .icon-reply-plus {
+                          width: 3rem;
+                          height: 3rem;
+                          margin: .8rem;
+                        }
+
+                        input {
+                          border: none;
+                          height: 4.8rem;
+                          border-radius: 4rem;
+                          padding-left: 1rem;
+                          background: none;
+                          color: #171717;
+                          box-sizing: border-box;
+                          margin-right: auto;
+
+                          &:focus,
+                          &:active {
+                            outline: none;
+                          }
+                        }
+
+                        .btn-submit {
+                          width: 3rem;
+                          height: 3rem;
+                          margin: .8rem;
+                          padding: 0 .6rem;
+
+                          .icon-submit {
+                            display: inline;
+                            transform: rotate(90deg) scale(0.7);
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+
+                .community-page-numbering {
+                  margin: 2rem 0 0 1rem;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+
+                  button {
+
+                    .left-arrow {
+                      display: inline-block;
+                      transform: rotate(270deg) scale(0.7);
+                      width: 2rem;
+                      height: 2rem;
+                      margin: 1px 0 0 0;
+                    }
+                  }
+
+                  ul {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    counter-reset: list-number;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    button {
+
+                      li {
+                        counter-increment: list-number;
+                        line-height: 2;
+
+                        &::before {
+                          content: counter(list-number);
+                          display: inline-block;
+                          text-align: center;
+                          line-height: 1.2;
+                          width: 3rem;
+                          height: 3rem;
+                          border-radius: 50%;
+                          color: #bdbebd;
+                          margin: 0 0 0 .5rem;
+                          font-size: 1.3rem;
+                          line-height: 3rem;
+                        }
+
+
+                        &.first-child {
+
+                          &::before {
+                            width: 3rem;
+                            height: 3rem;
+                            background: #e9e9e9;
+                            color: #222;
+                          }
+                        }
+                      }
+                    }
+                  }
+
+                  button {
+
+                    .right-arrow {
+                      display: inline-block;
+                      transform: rotate(90deg) scale(0.7);
+                      width: 2rem;
+                      height: 2rem;
+                      margin: 1px 0 0 .8rem;
+                    }
+                  }
+                }
+              }
+            }
+
+            // 환불정책
+            .wrap-refund {
+
+              .refund {
+                display: inline-block;
+                width: 100%;
+                padding: 2rem;
+                margin: 5rem 0 0 0;
+                border: 1px solid #E9ECEF;
+                border-radius: .8rem;
+                background: #fafafa;
+
+                p {
+
+                  &:nth-child(1) {
+                    font-size: 1.6rem;
+                    font-weight: 700;
+                    color: #222;
+                  }
+                }
+
+                .upper-text-area {
+                  padding: 0 1rem;
+
+                  .refund-heading {
+                    color: #444;
+                    font-size: 4rem;
+                    font-weight: 700;
+                    padding: 4rem 0;
+                    line-height: 5rem;
+                  }
+
+                  .upper-message {
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                    color: #444;
+                    line-height: 2.2rem;
+
+                    p {
+
+                      &:nth-child(1) {
+                        font-weight: 400;
+                        padding: 0 1rem 0 0;
+                      }
+
+                      &:nth-child(2) {
+                        margin: 3rem 0;
+                        padding: 0 1rem 0 0;
+                      }
+                    }
+                  }
+                }
+
+                .refund-table {
+                  width: 100%;
+                  border-collapse: collapse;
+                  text-align: left;
+                  line-height: 1.5;
+                  margin: 4rem .5rem;
+                  box-sizing: border-box;
+
+                  thead {
+                    background: #42b7a3;
+
+                    tr {
+
+                      th {
+                        padding: 0 2rem;
+                        font-weight: normal;
+                        vertical-align: top;
+                        color: #ebe9ea;
+                        font-size: 1.5rem;
+                        line-height: 4.6rem;
+
+                        &:nth-of-type(1) {
+                          width: 20%;
+                        }
+
+                        &:nth-of-type(2) {
+                          width: 80%;
+                        }
+                      }
+                    }
+                  }
+
+                  tbody {
+
+                    tr {
+
+                      th {
+                        padding: 2rem;
+                        font-weight: bold;
+                        vertical-align: top;
+                        border-bottom: 0.5px solid #42b7a3;
+                        background: #faf5f6;
+                        color: #444;
+                        font-size: 1.4rem;
+                      }
+
+                      td {
+                        padding: 2rem;
+                        vertical-align: top;
+                        border-bottom: 0.5px solid #42b7a3;
+                        background: #eee;
+                        color: #444;
+                        font-size: 1.4rem;
+                      }
+                    }
+                  }
+                }
+
+                .below-message {
+                  font-size: 1.5rem;
+                  font-weight: 400;
+                  color: #444;
+                  line-height: 2.2rem;
+                  padding: 0 1rem;
+
+                  p {
+                    font-weight: 400;
+
+                    &:nth-child(1) {
+                      font-weight: 400;
+                      padding: 0 2rem 0 1rem;
+                    }
+
+                    &:nth-child(2) {
+                      margin: 3rem 0;
+                      padding: 0 2rem 0 1rem;
+                    }
+                  }
+                }
+              }
+            }
+
+            // 자주하는 질문
+            .wrap-faq {
+              margin: 5rem 0;
+
+              .faq {
+                display: inline-block;
+                width: 100%;
+                padding: 2rem 0 3rem 0;
+                border: 1px solid #E9ECEF;
+                border-radius: .8rem;
+                background: #fafafa;
+
+                p {
+
+                  &:nth-of-type(1) {
+                    font-size: 1.6rem;
+                    font-weight: 700;
+                    color: #222;
+                    margin: 0 0 0 2rem;
+                  }
+
+                  &:nth-of-type(2) {
+                    font-size: 2.4rem;
+                    font-weight: 700;
+                    color: #444;
+                    margin: 4rem 0 0 4rem;
+                    padding: 0 0 .5rem 0;
+                    border-bottom: 2px solid #444;
+                    width: 18rem;
+                    line-height: 3.6rem;
+                  }
+                }
+
+                .faq-multi-accordion {
+                  margin: 2.5rem 4rem;
+                  overflow: hidden;
+
+                  details {
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    color: #444;
+
+                    &[open] {
+
+                      summary {
+                        border-bottom: transparent;
+                        padding: 3rem 0 1.5rem 0;
+
+                        &::marker {
+                          content: "✔  ";
+                        }
+                      }
+
+                      p {
+                        padding: 0 1rem 2rem 2rem;
+                        border-bottom: 1px solid #666;
+                        font-size: 1.5rem;
+                        font-weight: 400;
+                        color: #444;
+                        line-height: 2.4rem;
+                      }
+                    }
+
+                    summary {
+                      font-size: 1.6rem;
+                      font-weight: 700;
+                      color: #444;
+                      padding: 1.5rem;
+                      cursor: pointer;
+                      padding: 3rem 0 2.5rem;
+                      width: 60rem;
+                      border-bottom: 1px solid #666;
+
+                      &::marker {
+                        content: "✔  ";
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          // 오른쪽 수강옵션 영역
+          .right-area {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0 1%;
+
+            .wrap-class-option-container {
+              min-width: 31rem;
+              max-width: 40rem;
+              padding: 2.4rem 1.2rem 1.8rem;
+              margin: 5rem 0 5rem;
+              box-sizing: border-box;
+              -webkit-box-sizing: border-box;
+              -moz-box-sizing: border-box;
+              border: 1px solid #E9ECEF;
+              background: #fafafa;
+              border-radius: .8rem;
+              position: sticky;
+              top: 5rem;
+
+              .class-option-container {
+                // min-width: 30rem;
+                box-sizing: border-box;
+                padding: 1.2rem;
+
+                .option-tit {
+                  font-size: 2rem;
+                  font-weight: 700;
+                  line-height: 2.8rem;
+                  color: #222;
+                }
+
+                .by-tutor-name {
+                  font-size: 1.5rem;
+                  font-weight: 500;
+                  line-height: 2.8rem;
+                  color: #222;
+                }
+
+                .option-price {
+                  margin: 4rem 0 1rem;
+
+                  span {
+
+                    &:nth-of-type(1) {
+                      font-size: 2.4rem;
+                      font-weight: 700;
+                      line-height: 2.8rem;
+                      color: #e5503c;
+                    }
+
+                    &:nth-of-type(2) {
+                      font-size: 2.4rem;
+                      font-weight: 700;
+                      line-height: 2.8rem;
+                      color: #222;
+                      margin: 0 0 0 .5rem;
+                    }
+
+                    &:nth-of-type(3) {
+                      font-size: 1.6rem;
+                      font-weight: 500;
+                      line-height: 2.8rem;
+                      color: #ced4da;
+                      margin: 0 0 0 .5rem;
+                      text-decoration: line-through;
+                    }
+                  }
+                }
+
+                .discount-closure {
+                  width: 100%;
+                  height: 3rem;
+                  background: #eee;
+                  line-height: 3rem;
+                  font-size: 1.2rem;
+                  text-align: center;
+                  color: $text-red;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+
+                  span:nth-of-type(1) {
+                    margin: 0 .5rem 0 0;
+                  }
+
+                  span:nth-of-type(2) {
+                    margin: 0 0 0 .5rem;
+                  }
+
+                  .countDown {
+                    font-weight: 700;
+                  }
+                }
+
+                .option-class-info-container {
+                  margin: 2rem 0 0 0;
+                  width: 100%;
+                  display: grid;
+                  grid-template-columns: auto auto;
+                  grid-template-rows: 1fr 1fr;
+                  grid-gap: .5rem;
+
+                  .option-class-info {
+                    font-size: 1.4rem;
+                    font-weight: 500;
+                    line-height: 1.8rem;
+                    padding: 0 0 1rem 0;
+
+                    &:nth-of-type(2) {
+
+                      p {
+
+                        &:last-child {
+                          text-indent: 1.5rem;
+                        }
+                      }
+                    }
+                  }
+                }
+
+                .option-like-and-add {
+                  width: 100%;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+
+                  .option-like {
+                    flex: 1;
+                    width: 100%;
+                    height: 4.5rem;
+                    background: #eee;
+                    border-radius: .5rem;
+                    font-size: 1.1rem;
+                    font-weight: 500;
+                    margin: 0 .5rem;
+                  }
+                }
+
+                .option-enroll {
+                  margin: 2.5rem 0 1.5rem;
+                  width: 100%;
+                  height: 5rem;
+                  border-radius: .5rem;
+                  background: #3bc4a3;
+                  color: #fff;
+                  font-size: 1.6rem;
+                  font-weight: 500;
+                  line-height: 2.8rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // 모바일 컨텐츠 영역
+  section.mobile-contents-section {
+
+    .only-mobile {
+      display: none;
+    }
+  }
+}
+
+// main contents - labtop (961px ~ 1199px)
+@media all and (min-width: 960px) and (max-width: 1199px) {
+  main {
+
+    // 강사 소개
+    section.tutor-intro-section {
+
+      .only-pc {
+
+        .tutor-intro {
+
+          .tutor-intro_align-center {
+
+            .tutor-intro_text-area {
+              padding: 0 0 5rem 5rem;
+              flex: 1 0 45.4rem;
+            }
+
+            .tutor-intro_img-area {
+
+              .tutor-img {
+
+                .tutor-pic {
+                  margin: 0 0 0 4rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // PC 중간 네비게이션
+    section.class-intro-navbar-section {
+
+      .only-pc {
+
+        .class-intro_navbar {
+
+          ul {
+
+            li {
+              padding: 0 1.5rem;
+
+              &:first-child {
+                padding: 0 1.5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // PC 컨텐츠 영역
+    section.pc-contents-section {
+
+      .only-pc {
+
+        .class-intro {
+
+          .class-intro_align-center {
+
+            // 왼쪽 강의 영역
+            .left-area {
+
+              // 수강후기
+              .wrap-lecture-review {
+
+                .lecture-review {
+
+                  .review-comment-container {
+
+                    .review-comment-box {
+                      display: block;
+
+                      .item {
+                        margin: 1rem 0 0 0;
+                      }
+                    }
+                  }
+                }
+              }
+
+              // 환불정책
+              .wrap-refund {
+
+                .refund {
+
+                  .refund-table {
+
+                    thead {
+
+                      tr {
+
+                        th {
+
+                          &:nth-of-type(1) {
+                            width: 25%;
+                          }
+
+                          &:nth-of-type(2) {
+                            width: 75%;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// main contents - tablet, mobile (0px ~ 959px)
+@media all and (min-width: 0px) and (max-width: 959.98px) {
+  main {
+
+    // 상단 강의 소개 영역
+    section.tutor-intro-section {
+
+      .only-pc {
+        display: none;
+      }
+
+      .only-mobile {
+        display: block;
+
+        .tutor-header {
+          padding: 0 0 1.6rem;
+          width: 100%;
+          min-width: 320px;
+          background: #fff;
+          border-bottom: 1rem solid #eee;
+
+          .tutor-container {
+            padding: 0 0;
+
+            .video-area {
+              width: 100%;
+
+              .video-container {
+                position: relative;
+                width: 100%;
+                overflow: hidden;
+                padding-bottom: 56.25%;
+
+                .player {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                }
+              }
+            }
+
+            .text-area {
+              margin: 1.5rem 0 0 0;
+              font-size: 1.6rem;
+              padding: 0 1.6rem;
+
+              .option-tit {
+                font-size: 1.7rem;
+                font-weight: bolder;
+              }
+
+              .by-tutor-name {
+                line-height: 2.5rem;
+              }
+
+              .option-price {
+                font-size: 2rem;
+                line-height: 4rem;
+                font-weight: bolder;
+
+                span:nth-of-type(1) {
+                  color: $text-red;
+                }
+
+                span:nth-of-type(2) {
+                  color: $text-black;
+                }
+
+                span:nth-of-type(3) {
+                  font-weight: normal;
+                  color: #ced4da;
+                  text-decoration: line-through;
+                }
+              }
+
+              .discount-closure {
+                margin: 1rem 0 0 0;
+                font-size: 1.4rem;
+                font-weight: normal;
+                text-align: center;
+                background: #f2f2f2;
+                padding: .3rem;
+                color: $text-red;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                span:nth-of-type(1) {
+                  margin: 0 .5rem 0 0;
+                }
+
+                span:nth-of-type(2) {
+                  margin: 0 0 0 .5rem;
+                }
+
+                .countDown {
+                  font-weight: 700;
+                }
+              }
+
+              .grid-container {
+                margin: 1.5rem 0 0 0;
+                font-size: 1.4rem;
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-template-rows: 1fr 1fr;
+                grid-gap: .5rem;
+
+                .items {
+                  line-height: 3rem;
+                }
+              }
+
+              .option-like-and-add {
+                margin: 1.5rem 0 0 0;
+                font-size: 1.4rem;
+                display: flex;
+                justify-content: space-between;
+                color: $text-black;
+
+                button {
+                  flex: 1 1 auto;
+                  display: inline-block;
+                  padding: 0 1.6rem;
+                  height: 4rem;
+                  border-radius: .4rem;
+                  background: #f2f2f2;
+                  font-weight: normal;
+
+                  &:first-child {
+                    margin-right: 1.5rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // 모바일 하단 구매 옵션
+    section.mobile-purchase-order {
+
+      .only-mobile {
+        display: block;
+
+        .bottom-purchase-container {
+          background: #fff;
+          position: fixed;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          width: 100%;
+          z-index: 103;
+
+          .discount-closure {
+            font-size: 1.3rem;
+            background: rgba(0, 0, 0, .8);
+            color: $bg-white;
+            padding: .3rem;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            span:nth-of-type(1) {
+              margin: 0 .5rem 0 0;
+            }
+
+            span:nth-of-type(2) {
+              margin: 0 0 0 .5rem;
+            }
+
+            .countDown {
+              color: #ffec3f;
+              font-weight: 700;
+            }
+          }
+
+          .enroll-btn {
+            display: flex;
+            align-items: center;
+            padding: 1.2rem;
+
+            .enroll-txt {
+
+              p {
+                font-size: 1.3rem;
+                padding-right: 2rem;
+              }
+            }
+
+            button {
+              margin-left: auto;
+              color: $bg-white;
+              font-weight: bolder;
+              display: block;
+              font-size: 1.5rem;
+              padding: 1rem 6rem;
+              background: $text-red;
+              border-radius: .4rem;
+            }
+          }
+        }
+      }
+    }
+
+    // 모바일 중간 네비게이션
+    section.class-intro-navbar-section {
+
+      .only-pc {
+        display: none;
+      }
+
+      .only-mobile {
+        display: block;
+
+        .wrap-class-intro_navbar {
+
+          .class-intro_navbar {
+            width: 100%;
+            position: sticky;
+            position: -webkit-sticky;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            background: #fff;
+            border-bottom: 1px solid #eee;
+            margin: 0 auto;
+            overflow: scroll;
+            white-space: nowrap;
+            overflow-y: hidden;
+            padding: 0 1rem 0 1rem;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+
+            &::before {
+              content: '';
+              display: block;
+              position: absolute;
+              top: 0;
+              right: 0;
+              width: 4rem;
+              height: 4.3rem;
+              background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .8) 38%, rgba(255, 255, 255, 1) 60%, rgba(255, 255, 255, 1) 100%);
+            }
+
+            &::-webkit-scrollbar {
+              display: none;
+            }
+
+            ul {
+              display: flex;
+              align-items: center;
+              font-size: 1.4rem;
+              font-weight: normal;
+              overflow: auto;
+              -ms-overflow-style: none;
+              scrollbar-width: none;
+
+              &::-webkit-scrollbar {
+                display: none;
+              }
+
+              li {
+                height: 4.3rem;
+                line-height: 4.3rem;
+                display: list-item;
+
+                &:last-child {
+
+                  a {
+                    padding: 0 3rem 0 1rem;
+                  }
+                }
+
+                a {
+                  display: block;
+                  padding: 0 1rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // PC 컨텐츠 영역
+    section.pc-contents-section {
+
+      .only-pc {
+        display: none;
+      }
+    }
+
+    // 모바일 컨텐츠 영역
+    section.mobile-contents-section {
+
+      .only-mobile {
+        display: block;
+
+        // 강의소개
+        .section-lecture-intro {
+          width: 100%;
+          padding: 1rem 1.6rem 5rem;
+          border-bottom: 1rem solid #eee;
+          font-size: 1.4rem;
+
+          .wrap-introduce-tutor {
+            width: 100%;
+            padding: 2rem 1rem 1rem;
+
+            .introduce-tutor {
+              display: flex;
+              flex-direction: column;
+
+              .intro__header {
+                display: flex;
+                align-items: center;
+
+                .introduce-tutor_tit {
+                  margin: 1.6rem 0;
+
+                  em {
+                    font-size: 2rem;
+                    font-weight: bolder;
+                    word-wrap: break-word;
+                    word-break: keep-all;
+                  }
+                }
+
+                .introduce-tutor_img-area {
+                  margin-left: auto;
+                  padding: .5rem 2rem 0 0;
+
+                  .pofile-img-box {
+                    width: 8rem;
+                    border-radius: 50%;
+                    overflow: hidden;
+
+                    .profile-img {
+                      width: 100%;
+                      max-width: 100%;
+                      object-fit: cover;
+                    }
+                  }
+                }
+              }
+
+              .introduce-tutor_text-area {
+
+                em {
+                  font-size: 1.6rem;
+                  font-weight: bolder;
+                  line-height: 2.4rem;
+                }
+
+                .introduce-tutor_context-text {
+                  font-size: 1.4rem;
+                  margin: 1rem 0 0 0;
+
+                  p {
+                    font-size: 1.5rem;
+                    margin-bottom: 1.5rem;
+                    line-height: 2.2rem;
+                  }
+
+                  .text-01 {
+                    text-indent: 1rem;
+                  }
+
+                  em {
+                    font-size: 1.6rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        // 커리큘럼
+        .section-curriculum {
+          width: 100%;
+          padding: 2rem 1.6rem 0;
+          border-bottom: 1rem solid #eee;
+          font-size: 1.4rem;
+
+          .wrap-curriculum {
+            width: 100%;
+            padding: 1rem 0;
+
+            .curriculum {
+              display: block;
+              padding: 2rem 0 5rem 0;
+
+              p {
+                font-size: 1.6rem;
+                font-weight: bolder;
+                color: $text-black;
+              }
+
+              .multi-accordion {
+                margin: 2rem auto 0;
+                border-radius: .5rem;
+                overflow: hidden;
+
+                details {
+                  display: block;
+                  line-height: 2.5rem;
+
+                  &:first-child {
+
+                    summary {
+                      border-bottom: 1px solid #26806b;
+                    }
+                  }
+
+                  &:nth-child(2) {
+
+                    summary {
+                      border-bottom: 1px solid #26806b;
+                    }
+                  }
+
+                  &[open] {
+                    background: #fff;
+                    display: block;
+
+                    summary {
+                      background: $green;
+
+                      &::marker {
+                        content: "➖ ";
+                        font-size: 1rem;
+                      }
+
+                      .text-and-preview {
+                        display: block;
+                      }
+                    }
+                  }
+
+                  summary {
+                    font-size: 1.4rem;
+                    padding: 1rem;
+                    cursor: pointer;
+                    border-bottom: 1px solid $green;
+                    background-color: $green;
+
+                    &::marker {
+                      content: "➕ ";
+                      font-size: 1rem;
+                    }
+                  }
+
+                  .text-and-preview {
+                    display: flex;
+                    justify-content: space-between;
+                    border-bottom: 1px solid #eee;
+
+                    .text {
+                      margin: 1rem 1rem;
+                      background: $bg-white;
+                      font-size: 1.4rem;
+                      line-height: 3rem;
+
+                      &::before {
+                        content: '';
+                        width: 1.6rem;
+                        height: 1.6rem;
+                        display: inline-block;
+                        background: url("../src/images/play-gray.svg") no-repeat;
+                        vertical-align: -0.3rem;
+                        margin: 0 .7rem 0 0;
+                      }
+                    }
+
+                    .preview {
+                      padding: .6rem 1rem;
+                      border: 1.5px solid #42b7a3;
+                      border-radius: .5rem;
+                      font-size: 1.2rem;
+                      color: #42b7a3;
+                      margin: 1rem .8rem 1.5rem 1.5rem;
+                    }
+
+                    .runtime {
+                      padding: 0 1rem;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        // 수강후기
+        .section-lecture-review {
+          width: 100%;
+          padding: 2rem 1.6rem 0;
+          border-bottom: 1rem solid #eee;
+
+          .lecture-review {
+            display: inline-block;
+            width: 100%;
+            border-radius: .8rem;
+            padding: 3rem 1rem 5rem 1rem;
+
+            .lecture-review__title {
+              font-size: 1.6rem;
+              font-weight: 700;
+              color: #222;
+              margin: 0 0 2rem 0;
+            }
+
+            .wrap-star-review {
+              display: flex;
+              flex-direction: column;
+
+              .left-star-review {
+                border: 1px solid #e9e9e9;
+                border-radius: .5rem;
+                text-align: center;
+                box-sizing: border-box;
+                width: 100%;
+                margin: 0 0 1.6rem 0;
+                padding: 2.5rem;
+
+                .review-num-01 {
+                  font-size: 3.6rem;
+                  font-weight: 700;
+                }
+
+                .star-images {
+                  display: flex;
+                  justify-content: center;
+                  margin: 1.5rem 0 1.5rem 0;
+
+                  .star {
+                    width: 1.7rem;
+                    height: 1.7rem;
+                    padding: 0 .3rem 0 0;
+                  }
+                }
+
+                .review-num-02 {
+                  font-size: 1.4rem;
+                  font-weight: 300;
+                  color: #666;
+                }
+              }
+
+              .right-star-review {
+                border: 1px solid #e9e9e9;
+                border-radius: .5rem;
+                box-sizing: border-box;
+                background: #fff;
+                width: 100%;
+                margin: 0 auto;
+
+                .star-score-container {
+                  padding: 2rem;
+
+                  .score-box {
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    margin: 1.5rem 0;
+
+                    .star-score__text {
+                      flex: 0 0 5%;
+                      font-size: 1.3rem;
+                      font-weight: 500;
+                      color: #222;
+                      text-align: center;
+
+                    }
+
+                    .score-container {
+                      flex: 0 0 85%;
+                      width: 100%;
+                      color: transparent;
+                      line-height: 1rem;
+                      height: 1rem;
+                      background-color: rgba(0, 0, 0, 0.1);
+                      border-radius: 1rem;
+
+                      .skills {
+                        width: 0%;
+                        height: 1rem;
+                        border-radius: 1rem;
+                        transition: all 1s ease;
+
+                        &.score-05 {
+                          background-color: #ffc600;
+                          width: 97%;
+                        }
+
+                        &.score-04 {
+                          background-color: #ffc600;
+                          width: 3%;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+
+            .wrap-review-comment-navbar {
+
+              .review-comment-navbar {
+
+                ul {
+                  display: flex;
+                  font-size: 1.3rem;
+
+                  li {
+                    color: #222;
+                    padding: 3rem 0.5rem 1.5rem 0.5rem;
+                    font-weight: 400;
+
+                    &:first-child::after {
+                      display: inline-block;
+                      content: "";
+                      width: 0.5px;
+                      height: 1.1rem;
+                      background: #666;
+                      margin: 0 0 0 1rem;
+                      vertical-align: -1px;
+                    }
+
+                    a {
+                      font-weight: 400;
+                    }
+                  }
+                }
+              }
+            }
+
+            .review-comment-container {
+              border-radius: .5rem;
+
+              .review-comment-box {
+
+                .item {
+                  border: 1px solid #e9e9e9;
+                  border-radius: .5rem;
+                  color: #222;
+                  font-size: 1.5rem;
+                  font-weight: 400;
+                  line-height: 2.4rem;
+                  padding: 2rem;
+                  background: #fff;
+                  margin: 0 0 1.6rem 0;
+
+                  .user-profile-box {
+                    width: 15rem;
+                    height: 3rem;
+
+                    .user-profile-box-flex {
+                      display: flex;
+                      align-items: center;
+
+                      .star-user-profile-image {
+                        width: 3rem;
+                        height: 3rem;
+                        border-radius: 70%;
+                      }
+
+                      .별점유저네임 {
+                        width: 12rem;
+                        height: 3rem;
+
+                        .star-user-name {
+                          font-size: 1.4rem;
+                          font-weight: 500;
+                          line-height: 1rem;
+                          color: #333;
+                          margin: 0 0 0 1rem;
+                        }
+
+                        .별점이미지들 {
+                          width: 1rem;
+                          height: 1rem;
+                          display: flex;
+                          margin: .8rem 0 0 1rem;
+
+                          .star-count {
+                            font-size: 1.2rem;
+                            font-weight: 400;
+                            line-height: 1rem;
+                            color: #222;
+                            margin: 0 0 0 .5rem;
+                          }
+                        }
+                      }
+                    }
+                  }
+
+                  .ellipsis-box {
+                    white-space: normal;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 4;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    margin: 1rem 0 0 0;
+
+                    p {
+                      font-size: 1.4rem;
+                      font-weight: 400;
+                      color: #222;
+                      margin: 0 0 2rem 0;
+                    }
+                  }
+
+                  .ellipsis-date {
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                    line-height: 1.8rem;
+                    color: #444;
+                    margin: 0 auto;
+                    text-align: right;
+                  }
+                }
+              }
+            }
+
+            .comment-page-numbering {
+              margin: 4rem 0 2rem 1rem;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              button {
+
+                .left-arrow {
+                  display: inline-block;
+                  transform: rotate(270deg) scale(0.7);
+                  width: 2rem;
+                  height: 2rem;
+                  margin: 1px 0 0 0;
+                }
+
+                .right-arrow {
+                  display: inline-block;
+                  transform: rotate(90deg) scale(0.7);
+                  width: 2rem;
+                  height: 2rem;
+                  margin: 1px 0 0 0;
+                }
+
+                .first-child::before {
+                  width: 3rem;
+                  height: 3rem;
+                  background: #e9e9e9;
+                  color: #222;
+                }
+              }
+
+              ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                counter-reset: list-number;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                li {
+                  counter-increment: list-number;
+                  line-height: 2;
+
+                  &::before {
+                    content: counter(list-number);
+                    display: inline-block;
+                    text-align: center;
+                    line-height: 1.2;
+                    width: 3rem;
+                    height: 3rem;
+                    border-radius: 50%;
+                    color: #bdbebd;
+                    margin: 0 .25rem 0 .25rem;
+                    font-size: 1.3rem;
+                    line-height: 3rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        // 커뮤니티
+        .section-community {
+          width: 100%;
+          padding: 2rem 1.6rem 0;
+          border-bottom: 1rem solid #eee;
+
+          .wrap-community {
+
+            .community {
+              display: inline-block;
+              width: 100%;
+              border-radius: .8rem;
+              padding: 3rem 1rem 5rem 1rem;
+
+              p {
+                font-size: 1.6rem;
+                font-weight: 700;
+                color: #222;
+                margin: 0 0 2rem 0;
+              }
+
+              .community-carousel {
+
+                .wrap-swiper-container {
+
+                  .swiper-container {
+                    width: 100%;
+                    min-width: 25rem;
+                    height: 25rem;
+                    border: 1px solid #e9e9e9;
+                    font-size: 1.4rem;
+                    color: #000;
+                    padding: 0 0 0 0;
+                    border-radius: 1rem;
+                    margin: 2rem auto 0;
+                    text-align: center;
+                    overflow: hidden;
+
+                    .swiper {
+
+                      .swiper-wrapper {
+                        margin: 0 0 55px 0;
+
+                        .swiper-slide {
+                          width: 100%;
+                          min-width: 20rem;
+                          background: #fff;
+                          text-align: center;
+                          font-size: 1.3rem;
+
+                          .community-swiper-user-profile-box {
+                            margin: 2rem 0 0 3rem;
+
+                            .community-swiper-user-profile-box-flex {
+                              display: flex;
+
+                              .community-swiper-star-user-profile-image {
+                                width: 3.8rem;
+                                border-radius: 50%;
+                              }
+
+                              .community-swiper-별점유저네임 {
+                                padding: .8rem;
+
+                                .community-swiper-star-user-name {
+                                  width: 100px;
+                                  font-size: 1.4rem;
+                                  font-weight: 500;
+                                  line-height: 1.2rem;
+                                  color: #444;
+                                  text-align: left;
+                                  margin: 0;
+                                }
+
+                                .community-swiper-date {
+                                  font-size: 1rem;
+                                  font-weight: 400;
+                                  color: #666;
+                                  margin: .6rem 0 0 0;
+                                  text-align: left;
+                                }
+                              }
+                            }
+                          }
+
+                          .latest-swiper-caption {
+                            padding: 1rem 3rem;
+                            font-size: 1.4rem;
+                            font-weight: 400;
+                            line-height: 2.4rem;
+                            color: #000;
+                            text-align: left;
+                            display: -webkit-box;
+                            overflow: hidden;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 4;
+                            text-overflow: ellipsis;
+                            word-wrap: normal;
+                            max-height: 10.5rem;
+                            margin: 0;
+                          }
+
+                          .latest-swiper-more {
+                            font-size: 1.3rem;
+                            font-weight: 400;
+                            position: absolute;
+                            top: 20rem;
+                            left: 3rem;
+                            color: #e5503c;
+                          }
+
+                          .swiper-caption {
+                            padding: 1rem 3rem;
+                            font-size: 1.4rem;
+                            font-weight: 400;
+                            line-height: 2.4rem;
+                            color: #000;
+                            text-align: left;
+                            display: -webkit-box;
+                            overflow: hidden;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 4;
+                            text-overflow: ellipsis;
+                            word-wrap: normal;
+                            max-height: 10.3rem;
+                            margin: 0;
+                          }
+
+                          .swiper-more {
+                            font-size: 1.3rem;
+                            font-weight: 400;
+                            position: absolute;
+                            top: 20rem;
+                            left: 3rem;
+                            color: #e5503c;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+
+              .cont-community-comment {
+                display: inline-block;
+                width: 100%;
+                border: 1px solid #e9e9e9;
+                border-radius: 1rem;
+                margin: 1rem 0 0 0;
+                box-sizing: border-box;
+                background: #fff;
+
+                .community-user-profile-box {
+                  width: 15rem;
+                  height: 5rem;
+                  margin: 1rem 0 0 2rem;
+                  display: flex;
+                  align-items: center;
+
+                  .community-user-profile-box-flex {
+                    display: flex;
+                    align-items: center;
+
+                    .community-star-user-profile-image {
+                      width: 4rem;
+                      height: 4rem;
+                      border-radius: 70%;
+                    }
+
+                    .community-별점유저네임 {
+                      width: 30rem;
+                      height: 3rem;
+
+                      .community-star-user-name {
+                        font-size: 1.4rem;
+                        font-weight: 500;
+                        line-height: 1rem;
+                        color: #444;
+                        margin: 0 0 0 1rem;
+                      }
+
+                      .community-date {
+                        font-size: 1.1rem;
+                        font-weight: 400;
+                        color: #666;
+                        margin: .8rem 0 0 1rem;
+                      }
+                    }
+                  }
+                }
+
+                .user-review-record {
+                  margin: 0 6rem 1.5rem 7rem;
+
+                  p {
+                    font-size: 1.5rem;
+                    line-height: 2.4rem;
+                    color: #666;
+                    margin: 0;
+                    font-weight: 400;
+                  }
+                }
+
+                .tutor-reply-container {
+                  margin: 2rem 0 0 0;
+                  position: relative;
+
+                  &::before {
+                    content: '';
+                    display: inline-block;
+                    position: absolute;
+                    top: .5rem;
+                    left: 3rem;
+                    width: 2rem;
+                    height: 2rem;
+                    background: url("../src/images/reply-icon-gray.svg") no-repeat center/cover;
+                    transform: rotate(180deg);
+                  }
+
+                  .community-tutor-profile-box {
+                    width: 15rem;
+                    height: 5rem;
+                    margin: 0 0 0 6rem;
+                    display: flex;
+                    align-items: center;
+
+                    .community-tutor-profile-box-flex {
+                      display: flex;
+                      align-items: center;
+
+                      .community-star-tutor-profile-image {
+                        width: 4rem;
+                        height: 4rem;
+                        border-radius: 70%;
+                      }
+
+                      .community-별점강사네임 {
+                        width: 30rem;
+                        height: 3rem;
+
+                        .community-star-tutor-name {
+                          font-size: 1.4rem;
+                          font-weight: 500;
+                          line-height: 1rem;
+                          color: #444;
+                          margin: 0 0 0 1rem;
+                        }
+
+                        .community-tutor-date {
+                          font-size: 1.1rem;
+                          font-weight: 400;
+                          color: #666;
+                          margin: .8rem 0 0 1rem;
+                        }
+                      }
+                    }
+                  }
+
+                  .tutor-reply-record {
+                    padding: 0 5rem 2rem 4rem;
+
+                    .tutor-reply-들여쓰기 {
+                      display: inline-block;
+                      font-size: 1.5rem;
+                      line-height: 2.4rem;
+                      color: #666;
+                      margin: 0 0 0 3rem;
+                      font-weight: 400;
+                    }
+                  }
+                }
+
+                .writing-reply {
+                  width: 100%;
+                  padding: 0 2rem;
+                  height: 5rem;
+                  margin: 0 auto 2rem;
+
+                  .reply-area {
+                    width: 100%;
+                    padding: 0 1rem;
+                    height: 5rem;
+                    border: 1px solid #cccccc;
+                    border-radius: 4rem;
+                    box-sizing: border-box;
+
+                    form {
+                      display: flex;
+                      align-items: center;
+
+                      .icon-reply-plus {
+                        width: 3rem;
+                        height: 3rem;
+                        margin: .8rem 0;
+                      }
+
+                      input {
+                        border: none;
+                        width: 100%;
+                        height: 4.8rem;
+                        border-radius: 4rem;
+                        padding-left: 1rem;
+                        background: none;
+                        color: #171717;
+                        box-sizing: border-box;
+
+                        &:focus,
+                        &:active {
+                          outline: none;
+                        }
+                      }
+
+                      .btn-submit {
+                        width: 3rem;
+                        height: 3rem;
+                        margin: 0 0 0 .8rem;
+
+                        .icon-submit {
+                          display: inline-block;
+                          transform: rotate(90deg) scale(0.7);
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+
+              .community-page-numbering {
+                margin: 2rem 0 0 1rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                button {
+
+                  .left-arrow {
+                    display: inline-block;
+                    transform: rotate(270deg) scale(0.7);
+                    width: 2rem;
+                    height: 2rem;
+                    margin: 1px 0 0 0;
+                  }
+
+                  .right-arrow {
+                    display: inline-block;
+                    transform: rotate(90deg) scale(0.7);
+                    width: 2rem;
+                    height: 2rem;
+                    margin: 1px 0 0 0;
+                  }
+                }
+
+                ul {
+                  list-style: none;
+                  margin: 0;
+                  padding: 0;
+                  counter-reset: list-number;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+
+                  button {
+
+                    li.first-child {
+
+                      &::before {
+                        width: 3rem;
+                        height: 3rem;
+                        background: #e9e9e9;
+                        color: #222;
+                      }
+                    }
+
+                    li {
+                      counter-increment: list-number;
+                      line-height: 2;
+
+                      &::before {
+                        content: counter(list-number);
+                        display: inline-block;
+                        text-align: center;
+                        line-height: 1.2;
+                        width: 3rem;
+                        height: 3rem;
+                        border-radius: 50%;
+                        color: #bdbebd;
+                        margin: 0 .25rem 0 .25rem;
+                        font-size: 1.3rem;
+                        line-height: 3rem;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        // 환불정책
+        .section-refund {
+          width: 100%;
+          padding: 2rem 1.6rem 0;
+          border-bottom: 1rem solid #eee;
+
+          .wrap-refund {
+            display: inline-block;
+            width: 100%;
+            min-width: 320px;
+            border-radius: .8rem;
+            padding: 3rem 0 5rem 0;
+
+            .refund {
+              display: inline-block;
+              width: 100%;
+              padding: 0 0 2rem 0;
+              border-radius: .8rem;
+
+              p {
+
+                &:nth-of-type(1) {
+                  font-size: 1.6rem;
+                  font-weight: 700;
+                  color: #222;
+                  padding: 0 0 0 2rem;
+                }
+              }
+
+              .refund-make-sure {
+                color: #444;
+                font-size: 4rem;
+                font-weight: 700;
+                padding: 4rem 3rem 0;
+                line-height: 5rem;
+              }
+
+              .upper-message {
+                font-size: 1.5rem;
+                font-weight: 400;
+                color: #444;
+                padding: 0 3rem 0;
+
+                p {
+                  padding: 3rem 0 0;
+                  line-height: 2.7rem;
+                }
+              }
+
+              .refund-table {
+                width: 90%;
+                min-width: 20rem;
+                border-collapse: collapse;
+                text-align: left;
+                line-height: 1.5;
+                margin: 4rem 3rem;
+                box-sizing: border-box;
+
+                thead {
+                  background: #42b7a3;
+
+                  tr {
+
+                    th {
+                      padding: 0 2rem;
+                      font-weight: normal;
+                      vertical-align: top;
+                      color: #ebe9ea;
+                      font-size: 1.5rem;
+                      line-height: 4.6rem;
+                    }
+                  }
+                }
+
+                tbody {
+
+                  tr {
+
+                    th {
+                      padding: 2rem;
+                      font-weight: bold;
+                      vertical-align: top;
+                      border-bottom: 0.5px solid #42b7a3;
+                      background: #faf5f6;
+                      color: #444;
+                      font-size: 1.4rem;
+                    }
+
+                    td {
+                      padding: 2rem;
+                      vertical-align: top;
+                      border-bottom: 0.5px solid #42b7a3;
+                      background: #eee;
+                      color: #444;
+                      font-size: 1.4rem;
+                      line-height: 1.7;
+                    }
+                  }
+                }
+              }
+
+              .below-message {
+                font-size: 1.5rem;
+                font-weight: 400;
+                color: #444;
+                padding: 0 3rem 0;
+
+                p {
+                  padding: 0 0 3rem;
+                  line-height: 2.7rem;
+
+                  &:not(:last-child) {
+                    font-size: 1.6rem;
+                    font-weight: 700;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        // 자주하는 질문
+        .section-faq {
+          width: 100%;
+          padding: 2rem 1.6rem 0;
+
+          .wrap-faq {
+            display: inline-block;
+            width: 100%;
+            min-width: 320px;
+            border-radius: .8rem;
+            padding: 3rem 0 8rem 0;
+
+            .faq {
+              display: inline-block;
+              width: 100%;
+              padding: 0 0 3rem 0;
+              border-radius: .8rem;
+
+              p {
+
+                &:nth-of-type(1) {
+                  font-size: 1.6rem;
+                  font-weight: 700;
+                  color: #222;
+                  padding: 0 0 0 2rem;
+                }
+
+                &:nth-of-type(2) {
+                  font-size: 2.4rem;
+                  font-weight: 700;
+                  color: #444;
+                  margin: 4rem 0 0 4rem;
+                  padding: 0 0 .5rem 0;
+                  border-bottom: 2px solid #444;
+                  width: 18rem;
+                  line-height: 3.6rem;
+                }
+              }
+
+              .faq-multi-accordion {
+                width: 100%;
+                padding: 0 3rem;
+                overflow: hidden;
+                margin: 0;
+
+                details {
+                  font-size: 1.6rem;
+                  font-weight: 400;
+                  color: #444;
+
+                  &[open] {
+
+                    summary {
+                      width: 90%;
+                      border-bottom: transparent;
+                      padding: 3rem 0 1.5rem 0;
+
+                      &::marker {
+                        content: "✔  ";
+                      }
+                    }
+
+                    p {
+                      width: 90%;
+                      padding: 0 0 2rem 4rem;
+                      border-bottom: 1px solid #666;
+                      font-size: 1.5rem;
+                      font-weight: 400;
+                      color: #444;
+                      line-height: 2.4rem;
+                    }
+                  }
+
+                  summary {
+                    width: 90%;
+                    border-bottom: 1px solid #666;
+                    font-size: 1.6rem;
+                    font-weight: 700;
+                    color: #444;
+                    padding: 1.5rem;
+                    cursor: pointer;
+                    padding: 3rem 0 2.5rem;
+
+                    &::marker {
+                      content: "✔  ";
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

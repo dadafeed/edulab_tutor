@@ -1,0 +1,39 @@
+// 반응형 가변 그리드
+@mixin fluid-grid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 6%;
+  padding-left: 6%;
+}
+
+// 미디어쿼리 분기점
+@mixin media($size) {
+  @if $size==small {
+    @media all and (min-width: 0px) and (max-width: 599.98px) {
+      @content;
+    }
+  }
+
+  @if $size==medium {
+    @media all and (min-width: 0px) and (max-width: 959.98px) {
+      @content;
+    }
+  }
+
+  @if $size==large {
+    @media all and (min-width: 960px) and (max-width: 1199px) {
+      @content;
+    }
+  }
+}
+
+// 반응형 미디어쿼리 메인 중단점
+@include media(medium) {
+  .only-pc {
+    display: none;
+  }
+
+  .only-mobile {
+    display: block;
+  }
+}

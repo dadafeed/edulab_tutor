@@ -1,0 +1,10 @@
+// 위아래로 움직이는 애니메이션
+@keyframes motion {
+  0% {
+    margin-top: 0px;
+  }
+
+  100% {
+    margin-top: 4px;
+  }
+}

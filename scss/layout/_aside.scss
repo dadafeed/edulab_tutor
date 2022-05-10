@@ -1,0 +1,127 @@
+// aside - labtop, pc (960px ~ )
+aside {
+
+  .top-banner {
+    position: relative;
+    width: 100%;
+    height: 3.6rem;
+    overflow: hidden;
+    text-align: center;
+    background: #2db39c;
+
+    .top-banner__link {
+      max-width: 138rem;
+      @include fluid-grid;
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: motion 0.3s linear 0s infinite alternate;
+
+      .top-banner__icon {
+        width: 3rem;
+        transform: rotate(120deg);
+      }
+
+      .top-banner__text {
+        font-size: 1.5rem;
+        font-weight: 500;
+        letter-spacing: .5px;
+        color: #fff;
+        line-height: 3rem;
+        padding: 0 0 0 1rem;
+      }
+    }
+
+    .top-banner__button {
+      position: absolute;
+      top: .5rem;
+      right: 5%;
+    }
+  }
+}
+
+// aside - tablet, mobile (0px ~ 959px)
+@media all and (min-width: 0px) and (max-width: 959.98px) {
+  aside {
+
+    .top-banner {
+      position: relative;
+      width: 100%;
+      height: 3.6rem;
+      overflow: hidden;
+      text-align: left;
+      background: #2db39c;
+
+      .top-banner__link {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: motion 0.3s linear 0s infinite alternate;
+        @include fluid-grid;
+
+        .top-banner__icon {
+          width: 2.5rem;
+          transform: rotate(120deg);
+        }
+
+        .top-banner__text {
+          font-size: 1.5rem;
+          font-weight: 500;
+          color: #fff;
+          letter-spacing: 0;
+          line-height: 3rem;
+          padding: 0 0 0 1rem;
+        }
+      }
+
+      .top-banner__button {
+        position: absolute;
+        top: .5rem;
+        right: 3%;
+      }
+    }
+  }
+}
+
+// aside - mobile (0px ~ 475px)
+@media screen and (min-width: 0px) and (max-width: 475px) {
+
+  aside {
+
+    .top-banner {
+
+      .top-banner__link {
+
+        .top-banner__text {
+          font-size: 1.3rem;
+          padding: 0 .5rem 0 0;
+        }
+      }
+    }
+  }
+}
+
+// aside - mobile (0px ~ 475px)
+@media screen and (min-width: 0px) and (max-width: 400px) {
+
+  aside {
+
+    .top-banner {
+
+      .top-banner__link {
+        padding: 0;
+
+        .top-banner__icon {
+          width: 2rem;
+        }
+
+        .top-banner__text {
+          font-size: 1.3rem;
+          padding: 0 1rem 0 0;
+        }
+      }
+    }
+  }
+}
