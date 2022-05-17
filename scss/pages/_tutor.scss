@@ -1723,6 +1723,7 @@ main {
           right: 0;
           bottom: 0;
           width: 100%;
+          min-width: 320px;
           z-index: 103;
 
           .discount-closure {

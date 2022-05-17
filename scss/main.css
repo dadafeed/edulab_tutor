@@ -198,6 +198,7 @@ input::-webkit-search-results-decoration {
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
   -webkit-text-size-adjust: none;
 }
 
@@ -3327,6 +3328,7 @@ main section.mobile-contents-section .only-mobile {
     right: 0;
     bottom: 0;
     width: 100%;
+    min-width: 320px;
     z-index: 103;
   }
   main section.mobile-purchase-order .only-mobile .bottom-purchase-container .discount-closure {
